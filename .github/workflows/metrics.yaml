@@ -45,6 +45,7 @@ jobs:
           plugin_languages_sections: recently-used
           plugin_languages_recent_load: 400
           plugin_languages_recent_days: 14
+          token: ${{ secrets.METRICS_TOKEN }}
 
   snake:
     runs-on: ubuntu-latest
