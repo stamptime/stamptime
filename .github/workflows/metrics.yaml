@@ -29,7 +29,7 @@ jobs:
         with:
           base: ""
           filename: metrics/isocalendar.svg
-          config_display: large
+          config_display: regular
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           token: ${{ secrets.METRICS_TOKEN }}
