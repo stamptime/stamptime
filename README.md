@@ -10,8 +10,6 @@
 <table border="0">
  <tr>
     <td><img align="center" src="/metrics/isocalendar.svg" alt="IsometricCalendar" width="400"></td>
- </tr>
- <tr>
     <td><img align="center" src="/metrics/languages.svg" alt="Languages" width="400"></td>
  </tr>
 </table>
