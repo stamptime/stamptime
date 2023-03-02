@@ -1,4 +1,4 @@
-<img align="center" src="/metrics/general.svg" alt="General" width="400">
+<img align="center" src="/metrics/general.svg" alt="General" width="100%">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VallecillaJesus/VallecillaJesus/snake/github-snake-dark.svg" />
