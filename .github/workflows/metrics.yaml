@@ -35,6 +35,16 @@ jobs:
           plugin_topics_limit: 0
           plugin_topics_mode: icons
           token: ${{ secrets.METRICS_TOKEN }}
+      
+      - name: 📙 Languajes
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/languajes.svg
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: recently-used
+          plugin_languages_recent_load: 400
+          plugin_languages_recent_days: 14
 
   snake:
     runs-on: ubuntu-latest
