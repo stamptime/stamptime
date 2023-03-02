@@ -10,53 +10,47 @@ on:
 
 jobs:
 
-  # github-metrics:
-  #   runs-on: ubuntu-latest
-  #   timeout-minutes: 10
-  #   permissions:
-  #     contents: write
-  #   steps:
+  github-metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
 
-  #     - name: 👤 General
-  #       uses: lowlighter/metrics@latest
-  #       with:
-  #         filename: metrics/general.svg
-  #         config_display: large
-  #         plugin_isocalendar: yes
-  #         plugin_isocalendar_duration: full-year
-  #         token: ${{ secrets.METRICS_TOKEN }}
+      - name: 👤 General
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/general.svg
+          config_display: large
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          token: ${{ secrets.METRICS_TOKEN }}
       
-  #     - name: 📙 Icons
-  #       uses: lowlighter/metrics@latest
-  #       with:
-  #         filename: metrics/icons.svg
-  #         base: ""
-  #         plugin_topics: yes
-  #         plugin_topics_limit: 0
-  #         plugin_topics_mode: icons
-  #         token: ${{ secrets.METRICS_TOKEN }}
+      - name: 📙 Icons
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/icons.svg
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
+          token: ${{ secrets.METRICS_TOKEN }}
       
-  # github-snake:
-  #   runs-on: ubuntu-latest
-  #   timeout-minutes: 10
-  #   steps:
-  #     - name: 🐍 Snake
-  #       uses: Platane/snk@v2
-  #       with:
-  #         github_user_name: ${{ github.repository_owner }}
-  #         outputs: |
-  #           dist/github-snake.svg?color_snake=#ec4899&color_dots=#e0e7ff,#a5b4fc,#6366f1,#4338ca,#312e81
-  #           dist/github-snake-dark.svg?color_snake=#ec4899&color_dots=#1e293b,#312e81,#4338ca,#6366f1,#a5b4fc
-  #     - uses: crazy-max/ghaction-github-pages@v2.5.0
-  #       with:
-  #         target_branch: main
-  #         build_dir: dist
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-    
-  goto:
+  github-snake:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
-      - run: bash .github/gotoyourbranch.sh
+
+      - name: 🐍 Snake
+        uses: Platane/snk@v2
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake/github-snake.svg?color_snake=#ec4899&color_dots=#e0e7ff,#a5b4fc,#6366f1,#4338ca,#312e81
+            dist/snake/github-snake-dark.svg?color_snake=#ec4899&color_dots=#1e293b,#312e81,#4338ca,#6366f1,#a5b4fc
+      - uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          target_branch: main
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}

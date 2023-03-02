@@ -1,2 +1,2 @@
-[Metrics](metrics/general.svg)
-[Icons](metrics/icons.svg)
+![Metrics](/metrics/metrics.svg)
+![Metrics](/metrics/icons.svg)
