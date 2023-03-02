@@ -4,5 +4,6 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/VallecillaJesus/VallecillaJesus/snake/github-snake.svg" />
 </picture>
 
-![Metrics](/metrics/general.svg)
-![Metrics](/metrics/icons.svg)
+![General](/metrics/general.svg)
+![Topics](/metrics/topics.svg)
+![Languages](/metrics/languages.svg)
