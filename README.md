@@ -6,6 +6,16 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/VallecillaJesus/VallecillaJesus/snake/github-snake.svg" />
 </picture>
 
-<img align="center" src="/metrics/isocalendar.svg" alt="IsometricCalendar" width="400">
+
+<table border="0">
+ <tr>
+    <td><img align="center" src="/metrics/isocalendar.svg" alt="IsometricCalendar" width="400"></td>
+ </tr>
+ <tr>
+    <td><img align="center" src="/metrics/languages.svg" alt="Languages" width="400"></td>
+ </tr>
+</table>
+
+
 <img align="center" src="/metrics/topics.svg" alt="Topics" width="400">
-<img align="center" src="/metrics/languages.svg" alt="Languages" width="400">
+
