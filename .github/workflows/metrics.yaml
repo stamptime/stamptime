@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -36,14 +36,7 @@ jobs:
           plugin_topics_mode: icons
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - uses: crazy-max/ghaction-github-pages@v2.5.0
-        with:
-          target_branch: metrics
-          build_dir: metrics
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-      
-  github-snake:
+  snake:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
