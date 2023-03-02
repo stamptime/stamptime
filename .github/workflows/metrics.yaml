@@ -39,7 +39,6 @@ jobs:
         with:
           base: ""
           filename: metrics/topics.svg
-          config_display: large
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
@@ -52,7 +51,7 @@ jobs:
           filename: metrics/languages.svg
           plugin_languages: yes
           plugin_languages_limit: 8
-          plugin_languages_sections: recently-used
+          plugin_languages_sections: most-used
           plugin_languages_recent_load: 400
           plugin_languages_recent_days: 14
           token: ${{ secrets.METRICS_TOKEN }}
