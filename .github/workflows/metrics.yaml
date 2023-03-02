@@ -27,6 +27,7 @@ jobs:
       - name: 🧱 Isometric Calendar 
         uses: lowlighter/metrics@latest
         with:
+          base: ""
           filename: metrics/isocalendar.svg
           config_display: large
           plugin_isocalendar: yes
@@ -36,6 +37,7 @@ jobs:
       - name: 📚 Topics
         uses: lowlighter/metrics@latest
         with:
+          base: ""
           filename: metrics/topics.svg
           config_display: large
           plugin_topics: yes
@@ -46,6 +48,7 @@ jobs:
       - name: 📙 Languages
         uses: lowlighter/metrics@latest
         with:
+          base: ""
           filename: metrics/languages.svg
           plugin_languages: yes
           plugin_languages_limit: 8
